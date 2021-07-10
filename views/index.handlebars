@@ -1,0 +1,49 @@
+<form action="/generate" method="POST">
+    <div class="container">
+        <!-- 照片 -->
+        <div class="row imges-group d-flex justify-content-around mb-5">
+            <div class="card d-flex flex-column justify-content-between col-3" style="width: 18rem;">
+                <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+                    class="card-img-top" alt="...">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="name" id="engineer" value="engineer">
+                    <label class="form-check-label" for="engineer">
+                        工程師
+                    </label>
+                </div>
+            </div>
+
+            <div class="card d-flex flex-column justify-content-between col-3" style="width: 18rem;">
+                <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
+                    class="card-img-top" alt="...">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="name" id="designer" value="designer">
+                    <label class="form-check-label" for="designer">
+                        設計師
+                    </label>
+                </div>
+            </div>
+
+            <div class="card d-flex flex-column justify-content-between col-3" style="width: 18rem;">
+                <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
+                    class="card-img-top" alt="...">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="name" id="entrepreneur" value="entrepreneur">
+                    <label class="form-check-label" for="entrepreneur">
+                        創業家
+                    </label>
+                </div>
+            </div>
+
+        </div>
+        <!-- 按鈕+文本 -->
+        <div class=" buttonAndText row mt-5">
+            <div class="ml-5 mr-3">
+                <button type="submit" class="btn btn-outline-secondary col1 ">產生幹話</button>
+            </div>
+            <div class="alert alert-info col-4" style="height:50px" role="alert">
+                <span>{{trashTalk}}</span>
+            </div>
+        </div>
+    </div>
+</form>
