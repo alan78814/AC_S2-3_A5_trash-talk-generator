@@ -26,7 +26,7 @@ function generateTrashTalk(identity) {
             //https://pjchender.blogspot.com/2016/01/javascriptobject.html
             return "身為一個" + professionChineseName[key] + task[key][arrayNumber(task[key])] + phrase[arrayNumber(phrase)]
         } else if (key === lastKeyOfTask && key !== identity) {
-            return "請選擇一個想說的人~"
+            return '<div class="btn-outline-danger">請選擇一個想說的人~</div>'
         }
     }
 }
