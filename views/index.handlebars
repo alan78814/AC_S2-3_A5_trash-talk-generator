@@ -6,7 +6,7 @@
                 <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
                     class="card-img-top" alt="...">
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="name" id="engineer" value="engineer">
+                    <input class="form-check-input" type="radio" name="name" id="engineer" value="engineer" {{checkEngineer options.name}}>
                     <label class="form-check-label" for="engineer">
                         工程師
                     </label>
@@ -17,8 +17,8 @@
                 <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
                     class="card-img-top" alt="...">
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="name" id="designer" value="designer">
-                    <label class="form-check-label" for="designer">
+                    <input class="form-check-input" type="radio" name="name" id="designer" value="designer" {{checkDesigner options.name}}>
+                    <label class="form-check-label" for="designer" >
                         設計師
                     </label>
                 </div>
@@ -28,7 +28,7 @@
                 <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
                     class="card-img-top" alt="...">
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="name" id="entrepreneur" value="entrepreneur">
+                    <input class="form-check-input" type="radio" name="name" id="entrepreneur" value="entrepreneur" {{checkEntrepreneur options.name}}>
                     <label class="form-check-label" for="entrepreneur">
                         創業家
                     </label>
